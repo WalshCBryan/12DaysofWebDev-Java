@@ -32,7 +32,7 @@ Bonus: you can add another input box for the song URL on Youtube if you want the
 
 Bonus: add the Konami Code for a secret feature! Maybe an image? A video? A song? It's up to you.
 
-
+###################################################
 December 28th
 Let's start on a little bit of Java review! You'll be working on the Adlister shortly after the break so it's important for us to have a solid foundation.
 
@@ -41,6 +41,8 @@ Create a new Java class called Santa.
 Create your main method. Using Console IO, allow him to ask the user what they want for Christmas.
 Store the response in a String variable.
 Bonus: Continue to ask if the user enters an empty String
+
+
 December 29th
 Santa's got a lot of work to do before next year...
 
