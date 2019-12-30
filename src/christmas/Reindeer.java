@@ -5,6 +5,10 @@ public class Reindeer {
 
     public Reindeer(String name) {
         this.name = name;
-        System.out.println("This reindeer is named " + name);
+        if (name.equalsIgnoreCase("rudolph")) {
+            System.out.println(name + " has a shiny red nose!");
+        } else {
+            System.out.println("This reindeer is named " + name);
+        }
     }
 }
