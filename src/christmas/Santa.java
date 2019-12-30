@@ -24,7 +24,9 @@ public class Santa {
     }
     public static void main(String[] args) {
 
-
+        Reindeer blitzen = new Reindeer("Blitzen");
+        Reindeer dasher = new Reindeer("Dasher");
+        Reindeer dancer = new Reindeer("Dancer");
         ask();
 
 
