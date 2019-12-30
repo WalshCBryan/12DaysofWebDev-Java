@@ -30,7 +30,7 @@ public class Santa {
         Reindeer vixen = new Reindeer("Vixen");
         Reindeer comet = new Reindeer("Comet");
         Reindeer cupid = new Reindeer("Cupid");
-        Reindeer dunder = new Reindeer("Dunder");
+        Reindeer donner = new Reindeer("Donner");
         Reindeer blitzen = new Reindeer("Blitzen");
         Reindeer rudolph = new Reindeer("Rudolph");
         Reindeer olive = new Reindeer("Olive");
