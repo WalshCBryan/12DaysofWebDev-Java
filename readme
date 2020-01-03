@@ -32,7 +32,6 @@ Bonus: you can add another input box for the song URL on Youtube if you want the
 
 Bonus: add the Konami Code for a secret feature! Maybe an image? A video? A song? It's up to you.
 
-###################################################
 December 28th
 Let's start on a little bit of Java review! You'll be working on the Adlister shortly after the break so it's important for us to have a solid foundation.
 
@@ -50,6 +49,8 @@ Create a new Java class called Reindeer. This should be in the same package as y
 This should have a protected String property of 'name.'
 Add a constructor that sets this name property when a new Reindeer is created. Display a message that tells you the name of the new Reindeer that has been created.
 Test your new class in the main method of the Santa class by creating instances of Santa's reindeer.
+
+###################################################
 December 30th
 Santa has 9 reindeer. 10 if you count Olive, the other reindeer...
 
