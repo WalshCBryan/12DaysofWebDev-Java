@@ -1,6 +1,8 @@
 package christmas;
 
+import javax.swing.*;
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 //Create a new Java package called Christmas.
@@ -17,9 +19,16 @@ import java.util.Scanner;
 //        Remember that Arrays in Java have a set length, so this method will actually need to create a copy with a different lenght.
 //        Need a hint? Go back to our ArraysExercises from Java II.
 
+//In your Santa Class, create an ArrayList of Strings called 'wishlist'
+//        Each time Santa asks what you want for Christmas, add the user response into the ArrayList. Keep adding presents!
+//        Go into the main method to check if your wishlist has been stored in the ArrayList.
+
+
 
 public class Santa {
-    Reindeer[] daDeers;
+    public static ArrayList<String> wishlist = new ArrayList<>();
+
+
 
 
     public static void ask() {
@@ -31,6 +40,7 @@ public class Santa {
             ask();
         } else {
             System.out.println("Oh... you'd like " + gift);
+            wishlist.add(gift);
         }
     }
 
@@ -45,33 +55,41 @@ public class Santa {
 
 
     public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
 
 
-
-
-
-       Reindeer[] daDeers = new Reindeer[10];
-
-       daDeers[0] = new Reindeer("Dasher");
-       daDeers[1] = new Reindeer("Dancer");
-       daDeers[2] = new Reindeer("Prancer");
-       daDeers[3] = new Reindeer("Vixen");
-       daDeers[4] = new Reindeer("Comet");
-       daDeers[5] = new Reindeer("Cupid");
-       daDeers[6] = new Reindeer("Donner");
-       daDeers[7] = new Reindeer("Blitzen");
-       daDeers[8] = new Reindeer("Rudolph");
-       daDeers[9] = new Reindeer("Olive");
-
-       daDeers = addReindeer(daDeers, new Reindeer("Bill"));
-       daDeers = addReindeer(daDeers, new Reindeer("Ted"));
-
-        for (Reindeer deer : daDeers){
-            System.out.println(deer.getName());
-        }
+//       Reindeer[] daDeers = new Reindeer[10];
+//
+//       daDeers[0] = new Reindeer("Dasher");
+//       daDeers[1] = new Reindeer("Dancer");
+//       daDeers[2] = new Reindeer("Prancer");
+//       daDeers[3] = new Reindeer("Vixen");
+//       daDeers[4] = new Reindeer("Comet");
+//       daDeers[5] = new Reindeer("Cupid");
+//       daDeers[6] = new Reindeer("Donner");
+//       daDeers[7] = new Reindeer("Blitzen");
+//       daDeers[8] = new Reindeer("Rudolph");
+//       daDeers[9] = new Reindeer("Olive");
+//
+//       daDeers = addReindeer(daDeers, new Reindeer("Bill"));
+//       daDeers = addReindeer(daDeers, new Reindeer("Ted"));
+//
+//        for (Reindeer deer : daDeers){
+//            System.out.println(deer.getName());
+//        }
 
         ask();
 
+
+        System.out.println("would you like something else? yes/no");
+        String resp = scan.nextLine();
+        if (resp.equalsIgnoreCase("yes")){
+            ask();
+        }
+
+        for(String gift : wishlist) {
+            System.out.println(gift);
+        }
 
     }
 
