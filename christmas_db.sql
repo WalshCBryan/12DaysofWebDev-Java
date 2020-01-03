@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS
 
 use christmas_db;
 
+truncate people;
+
 INSERT INTO people (first_name, last_name, age, birthday, nice)
 VALUES ('Michael','Angelo',32,'02/25/1987',true);
 
@@ -27,3 +29,7 @@ VALUES ('Leo','Nardo',34,'02/17/1985',false);
 
 INSERT INTO people (first_name, last_name, age, birthday, nice)
 VALUES ('Raph','Fayel',25,'10/01/1995',true);
+
+# lets delete all the not-nice ones!
+DELETE FROM people where nice = false;
+
