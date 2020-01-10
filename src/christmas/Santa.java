@@ -52,11 +52,21 @@ public class Santa {
         }
 
 
+    public static double powerOf(double x, double y) {
+        double result = 1;
+        for (int i = 1; i <= y; i++) {
+            result *= x;
+        }
+        return result;
+    }
+
 
 
     public static void main(String[] args) {
          Scanner scan = new Scanner(System.in);
 
+        System.out.println(powerOf(2,2));
+        System.out.println(powerOf(5,3));
 
 //       Reindeer[] daDeers = new Reindeer[10];
 //

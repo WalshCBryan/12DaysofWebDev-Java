@@ -6,6 +6,8 @@ package christmas;
 //        Test your new class in the main method of the Santa class by creating instances of Santa's reindeer.
 
 public class Reindeer {
+
+
     protected String name;
 
     public String getName() {
@@ -20,4 +22,8 @@ public class Reindeer {
             System.out.println("This reindeer is named " + name + ".");
         }
     }
+
+
+
+
 }
